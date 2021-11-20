@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Sum {
     public static void main(String[] args) {
-      int number = 45;
+      int number = 50;
       int sum = 0;
       while(number>0) {
           sum +=number % 10;
