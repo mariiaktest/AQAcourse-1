@@ -1,12 +1,4 @@
-package homewqork4part2;
-
-import homework4part1.Airline;
-import homework4part1.DayOfWeek;
-import org.w3c.dom.DOMException;
-import org.w3c.dom.DocumentFragment;
-import org.w3c.dom.Node;
-import org.w3c.dom.ranges.Range;
-import org.w3c.dom.ranges.RangeException;
+package task4_part2;
 
 import java.util.*;
 
@@ -19,14 +11,17 @@ public class Salad {
 
     public double getCalories() {
         double sum = 0;
-        for (int i = 0; i < vegetables.size(); i++) {
-            sum = sum + vegetables.get(i).getCalories();
+
+        for (Vegetable vegetable : vegetables) {
+            sum = sum + vegetable.getCalories();
         }
+
         return sum;
     }
 
     public List<Vegetable> sortByCalories(String order) {
         List<Vegetable> vegetablesCopy = new ArrayList<>(vegetables);
+
         if (order == "Desc") {
             Collections.sort(vegetablesCopy, Collections.reverseOrder(new SortByCalories()));
         } else if (order == "Asc") {
@@ -36,25 +31,17 @@ public class Salad {
         return vegetablesCopy;
     }
 
+    public List<Vegetable> rangeByCalories(int start, int end) {
+        List<Vegetable> rangedVegetables = new ArrayList<>();
 
+        for (Vegetable vegetable : vegetables) {
+            int calories = vegetable.getCalories();
+
+            if (calories >= start && calories <= end) {
+                rangedVegetables.add(vegetable);
+            }
+        }
+
+        return rangedVegetables;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

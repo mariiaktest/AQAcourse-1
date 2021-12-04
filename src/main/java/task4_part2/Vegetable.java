@@ -1,4 +1,4 @@
-package homewqork4part2;
+package task4_part2;
 
 public abstract class Vegetable {
     int calories;

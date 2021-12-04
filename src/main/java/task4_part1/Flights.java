@@ -1,7 +1,4 @@
-package homework4part1;
-
-import lecture4.TwoDShape;
-import org.w3c.dom.ls.LSOutput;
+package task4_part1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

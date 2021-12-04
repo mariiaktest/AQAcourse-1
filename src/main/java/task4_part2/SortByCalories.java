@@ -1,4 +1,4 @@
-package homewqork4part2;
+package task4_part2;
 
 import java.util.Comparator;
 
@@ -8,4 +8,3 @@ class SortByCalories implements Comparator<Vegetable> {
         return a.getCalories() - b.getCalories();
     }
 }
-

@@ -1,4 +1,4 @@
-package homework4part1;
+package task4_part1;
 
 public class DayOfWeek {
     private int day;
