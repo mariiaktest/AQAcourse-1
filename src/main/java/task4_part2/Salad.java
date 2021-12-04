@@ -22,9 +22,9 @@ public class Salad {
     public List<Vegetable> sortByCalories(String order) {
         List<Vegetable> vegetablesCopy = new ArrayList<>(vegetables);
 
-        if (order == "Desc") {
+        if (order.equals("DESC")) {
             Collections.sort(vegetablesCopy, Collections.reverseOrder(new SortByCalories()));
-        } else if (order == "Asc") {
+        } else if (order.equals("ASC")) {
             Collections.sort(vegetablesCopy, new SortByCalories());
         }
 

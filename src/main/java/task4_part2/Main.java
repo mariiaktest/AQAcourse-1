@@ -22,7 +22,7 @@ public class Main {
         salad.addIngredient(new Cabbage("Капуста", 200, 100));
         System.out.println("\nКаллорийность салата: " + salad.getCalories() + " каллорий на 100 грамм");
 
-        List<Vegetable> sortedByCalories = salad.sortByCalories("Desc");
+        List<Vegetable> sortedByCalories = salad.sortByCalories("DESC");
         List<Vegetable> rangedByCalories = salad.rangeByCalories(Integer.parseInt(rangeStart), Integer.parseInt(rangeEnd));
 
         System.out.println("\nОтсортировано по каллориях:");
